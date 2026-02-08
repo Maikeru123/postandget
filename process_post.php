@@ -1,7 +1,7 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'] ?? "Unknown";
-    $age = $_POST['age'] ?? "Unknown";
+if (isset($_POST['name']) && isset($_POST['age'])) {
+    $name = $_POST['name'];
+    $age = $_POST['age'];
 
     echo "<h2>POST Data Received</h2>";
     echo "<p>Name: $name</p>";
@@ -10,6 +10,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 } else {
     echo "No POST data received.";
 }
-
-
 ?>

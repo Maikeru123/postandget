@@ -23,15 +23,13 @@ $gpa = 3.75;
 $balance = 1500.50; 
 
 // Constants
-define("SITE_NAME", "My Awesome Site");
 
-
-echo "Welcome to " . SITE_NAME . ", $name!<br>";
+echo "HI $name!<br>";
 echo "You are $age years old.<br>";
 echo "Your GPA is $gpa and your account balance is $$balance.<br>";
 
 // One line
-echo "Hello $name, welcome to " . SITE_NAME . "! You are $age years old, GPA: $gpa, Balance: $$balance.<br><br><br>";
+echo "Hello $name, welcome to " . "! You are $age years old, GPA: $gpa, Balance: $$balance.<br><br><br>";
 
 
 $price = 50;
@@ -64,7 +62,7 @@ switch ($day) {
         echo "Start of the week!";
         break;
     case "Tuesday":
-        echo "Second day of the week!";
+        echo "Second day of the week!<br><br>";
         break;
     case "Wednesday":
         echo "Midweek!";
@@ -73,6 +71,13 @@ switch ($day) {
         echo "Another day!";
 }
 
+
+
+$names = array("Alice", "Bob", "Charlie");
+$numberss = array(10, 30, 40);
+
+echo($names[2]."<br>");
+echo($numberss[1]."<br>");
 
 ?>
 
